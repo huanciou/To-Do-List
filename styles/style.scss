@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, #6fa4e5, #03213f);
+}
+
+header {
+  height: 20vh;
+  display: flex;
+  justify-content: center; /* x- axis */
+  align-items: center; /* y-axis */
+  h1 {
+    color: white;
+    font-size: 3rem;
+  }
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  input,
+  button {
+    border: 1px solid transparent;
+  }
+
+  .eventBox {
+    height: 20px;
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 50px;
+    text-align: center;
+  }
+
+  .event {
+    height: 20px;
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 50px;
+    text-align: center;
+  }
+
+  .eventBox::placeholder {
+    text-align: center;
+  }
+
+  .AddButton {
+    height: 20px;
+    width: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: rgba(6, 50, 41, 0.25);
+    color: white;
+  }
+  .AddButton:hover {
+    background-color: rgba(243, 221, 225, 0.6);
+    transition: 0.5s;
+  }
+
+  /* Input arrow remove */
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  /* Input arrow remove */
+}
+
+div.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+    height: 40px;
+    width: 500px;
+    background-color: rgba(22, 58, 51, 0.25);
+    margin-top: 20px;
+    border-radius: 60px;
+    font-size: 0.9rem;
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  button {
+    width: 20px;
+    height: 20px;
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    background-color: rgba(22, 58, 51, 0);
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+}
+
+div.function {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    background-color: rgba(22, 58, 51, 0.3);
+    color: white;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: rgba(243, 221, 225, 0.6);
+    transition: 0.5s;
+  }
+}

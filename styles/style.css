@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#6fa4e5), to(#03213f));
+  background: linear-gradient(90deg, #6fa4e5, #03213f);
+}
+
+header {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* x- axis */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* y-axis */
+}
+
+header h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Input arrow remove */
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+  /* Input arrow remove */
+}
+
+form input,
+form button {
+  border: 1px solid transparent;
+}
+
+form .eventBox {
+  height: 20px;
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+form .event {
+  height: 20px;
+  width: 100px;
+  margin-right: 10px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+form .eventBox::-webkit-input-placeholder {
+  text-align: center;
+}
+
+form .eventBox:-ms-input-placeholder {
+  text-align: center;
+}
+
+form .eventBox::-ms-input-placeholder {
+  text-align: center;
+}
+
+form .eventBox::placeholder {
+  text-align: center;
+}
+
+form .AddButton {
+  height: 20px;
+  width: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: rgba(6, 50, 41, 0.25);
+  color: white;
+}
+
+form .AddButton:hover {
+  background-color: rgba(243, 221, 225, 0.6);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+div.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+  height: 40px;
+  width: 500px;
+  background-color: rgba(22, 58, 51, 0.25);
+  margin-top: 20px;
+  border-radius: 60px;
+  font-size: 0.9rem;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+}
+
+div.content button {
+  width: 20px;
+  height: 20px;
+  font-size: 1rem;
+  margin-left: 10px;
+  margin-bottom: 3px;
+  background-color: rgba(22, 58, 51, 0);
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+div.function {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.function button {
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  background-color: rgba(22, 58, 51, 0.3);
+  color: white;
+  cursor: pointer;
+}
+
+div.function button:hover {
+  background-color: rgba(243, 221, 225, 0.6);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/*# sourceMappingURL=style.css.map */

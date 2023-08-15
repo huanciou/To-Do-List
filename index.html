@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <!--Main Heading-->
+    <header>
+        <h1>2023</h1>
+    </header>
+
+   <!--Event Box-->
+    <form>
+        
+        <input class="event">
+        </input>
+
+        <input class="month eventBox" placeholder="M" type="number" min="1" max="12" required>
+        </input>
+        
+        <input class="day eventBox" placeholder="D" type="number" min="1" max="31" required>
+        </input>
+        
+        <button type="button"class="AddButton">
+            Add
+        </button>
+
+    </form>
+
+    <div class="function">
+        <button type="button" class="sorting">
+            Sort By Time
+        </button>
+        <button type="button" class="clearing">
+            Clear All
+        </button>
+    </div>
+
+    <!--TODO List show up-->
+    <div class="content"></div>
+
+</body>
+<script src="./app.js"></script>
+</html>
