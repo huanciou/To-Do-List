@@ -6,8 +6,14 @@
     "Lucida Sans", Arial, sans-serif;
 }
 
+i {
+  pointer-events: none;
+}
+
 body {
-  background: linear-gradient(90deg, #6fa4e5, #03213f);
+  background: linear-gradient(90deg, #9ae9dd, #254768);
+  max-height: 100vh;
+  max-width: 100vw;
 }
 
 header {
@@ -93,8 +99,8 @@ div.content {
     align-items: center;
     justify-content: center;
     color: rgba(255, 255, 255, 0.7);
-    height: 40px;
-    width: 500px;
+    height: 7vh;
+    width: 35vw;
     background-color: rgba(22, 58, 51, 0.25);
     margin-top: 20px;
     border-radius: 60px;
@@ -134,5 +140,23 @@ div.function {
   button:hover {
     background-color: rgba(243, 221, 225, 0.6);
     transition: 0.5s;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-500px);
   }
 }

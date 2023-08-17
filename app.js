@@ -15,8 +15,9 @@ AddButton.addEventListener("click", () => {
         /* Make A newDiv */
         const newDiv = document.createElement("div");
         newDiv.textContent = localStorage.getItem("temp"); 
-        ShowingContent.appendChild(newDiv); // 在Click event發生時 同時顯示在 newDiv
-
+        newDiv.style.animation = "slide 0.65s ease-in-out"; // animatation
+        ShowingContent.appendChild(newDiv); // 在Clickevent發生時 同時顯示在 newDiv
+        
         let keyName = `key_${offset}`;
         offset++;
         localStorage.setItem("offset", offset);
@@ -24,7 +25,7 @@ AddButton.addEventListener("click", () => {
 
         /* Create Delete Button */
         const deleteButton = document.createElement("button"); // 製造一個 <button> element
-        deleteButton.textContent = "🗑️";
+        deleteButton.innerHTML = '<i class="fa-solid fa-trash fa-sm" style="color: #d6d6d6;"></i>';
         newDiv.appendChild(deleteButton); // <button> 的 父 是 <newDiv>
         const deleteButtonClass = `del_${keyName}`;
         deleteButton.classList.add(deleteButtonClass); // 把這個 <button> 賦予class 跟 newDiv 掛鉤
@@ -33,16 +34,22 @@ AddButton.addEventListener("click", () => {
         /* Delete Button Event*/
 
         deleteButton.addEventListener("click", e => {
-            const del = localStorage.getItem(e.target.classList);
-            localStorage.removeItem(del);
-            localStorage.removeItem(e.target.classList);
-            location.reload(); // F5
+            const del = e.currentTarget.classList;
+            const del2 = localStorage.getItem(del);
+           
+            e.currentTarget.parentElement.addEventListener("animationend", () =>{
+                localStorage.removeItem(del);
+                localStorage.removeItem(del2); 
+                location.reload(); // F5
+            })
+            e.currentTarget.parentElement.style.animation = "fadeout 0.3s forwards";
+            
         });
     
         /* 清空输入框的内容 */
-        EventContent.value = "";
-        Day.value = "";
-        Month.value = "";
+        // EventContent.value = "";
+        // Day.value = "";
+        // Month.value = "";
     }
 });
 
@@ -63,17 +70,22 @@ for(let i=0; i<offset; i++){
         
         /* Create Delete Button */
         const deleteButton = document.createElement("button");
-        deleteButton.textContent = "🗑️";
+        deleteButton.innerHTML = '<i class="fa-solid fa-trash fa-sm" style="color: #d6d6d6;"></i>';
         contentDiv.appendChild(deleteButton);
         deleteButton.classList.add(`del_${KeyAccess}`);
 
         /* Delete Button Event */
         deleteButton.addEventListener("click", e => {
-            const del = localStorage.getItem(e.target.classList);
-            localStorage.removeItem(del);
-            localStorage.removeItem(e.target.classList);
-            localStorage.removeItem(`${del}_deleteButtonAdded`);  
-            location.reload(); // F5
+            const del = e.currentTarget.classList;
+            const del2 = localStorage.getItem(del);
+
+            e.currentTarget.parentElement.addEventListener("animationend", () =>{
+                localStorage.removeItem(del);
+                localStorage.removeItem(del2); 
+                location.reload(); // F5
+            })
+            e.currentTarget.parentElement.style.animation = "fadeout 0.3s forwards";
+            
         });
     }
 };
