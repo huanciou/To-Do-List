@@ -100,9 +100,9 @@ form .AddButton {
 }
 
 form .AddButton:hover {
-  background-color: rgba(243, 221, 225, 0.6);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  background-color: #e66767;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
 }
 
 form input::-webkit-outer-spin-button,
@@ -193,9 +193,9 @@ div.function button {
 }
 
 div.function button:hover {
-  background-color: rgba(243, 221, 225, 0.6);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  background-color: #e66767b5;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
 }
 
 @-webkit-keyframes slide {
@@ -226,8 +226,8 @@ div.function button:hover {
             transform: translateX(0px);
   }
   100% {
-    -webkit-transform: translateX(-500px);
-            transform: translateX(-500px);
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
   }
 }
 
@@ -237,8 +237,8 @@ div.function button:hover {
             transform: translateX(0px);
   }
   100% {
-    -webkit-transform: translateX(-500px);
-            transform: translateX(-500px);
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
   }
 }
 /*# sourceMappingURL=style.css.map */

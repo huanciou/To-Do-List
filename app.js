@@ -42,14 +42,14 @@ AddButton.addEventListener("click", () => {
                 localStorage.removeItem(del2); 
                 location.reload(); // F5
             })
-            e.currentTarget.parentElement.style.animation = "fadeout 0.3s forwards";
+            e.currentTarget.parentElement.style.animation = "fadeout 0.75s forwards";
             
         });
     
         /* 清空输入框的内容 */
-        // EventContent.value = "";
-        // Day.value = "";
-        // Month.value = "";
+        EventContent.value = "";
+        Day.value = "";
+        Month.value = "";
     }
 });
 
@@ -84,7 +84,8 @@ for(let i=0; i<offset; i++){
                 localStorage.removeItem(del2); 
                 location.reload(); // F5
             })
-            e.currentTarget.parentElement.style.animation = "fadeout 0.3s forwards";
+            e.currentTarget.parentElement.style.animation = "fadeout 0.75s forwards";
+
             
         });
     }
