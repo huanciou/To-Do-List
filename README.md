@@ -1,4 +1,4 @@
-/* 這是一個 TO-DO LIST 用戶可以 新增/刪除 待辦事件*/
+This's a To-Do List, user can add/delete calendar on it. enjoy:)
 
 https://huanciou.github.io/To-Do-List/
 
