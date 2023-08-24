@@ -1,4 +1,4 @@
-This's a To-Do List, user can add/delete calendar on it. enjoy :)
+This is a To-Do List, Users can add/delete events on it. enjoy :)
 
 https://huanciou.github.io/To-Do-List/
 
